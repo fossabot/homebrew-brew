@@ -3,9 +3,10 @@ class Asyncy < Formula
   desc "Asyncy CLI"
   homepage "https://docs.asyncy.com/cli"
   url "https://github.com/asyncy/cli.git",
-      :tag => "0.0.6",
-      :revision => "5f09afff6984a6eac7ad43cd11936d36c00809f2"
+      :tag => "0.0.7",
+      :revision => "130d0b5367162f59dde426e6b3bd423082b5c37d"
   depends_on "python3"
+
 
   resource "certifi" do
     url "https://pypi.python.org/packages/source/c/certifi/certifi-2018.4.16.tar.gz"
@@ -20,6 +21,16 @@ class Asyncy < Formula
   resource "click" do
     url "https://pypi.python.org/packages/source/c/click/click-6.7.tar.gz"
     sha256 "f15516df478d5a56180fbf80e68f206010e6d160fc39fa508b65e035fd75130b"
+  end
+
+  resource "click-completion" do
+    url "https://pypi.python.org/packages/source/c/click-completion/click-completion-0.3.1.tar.gz"
+    sha256 "7ca12978493a7450486cef155845af4fae48744c3f97b7250a254de65c9e5e5a"
+  end
+
+  resource "click-didyoumean" do
+    url "https://pypi.python.org/packages/source/c/click-didyoumean/click-didyoumean-0.0.3.tar.gz"
+    sha256 "112229485c9704ff51362fe34b2d4f0b12fc71cc20f6d2b3afabed4b8bfa6aeb"
   end
 
   resource "click-spinner" do
@@ -42,9 +53,19 @@ class Asyncy < Formula
     sha256 "684a38a6f903c1d71d6d5fac066b58d7768af4de2b832e426ec79c30daa94a16"
   end
 
+  resource "Jinja2" do
+    url "https://pypi.python.org/packages/source/J/Jinja2/Jinja2-2.10.tar.gz"
+    sha256 "f84be1bb0040caca4cea721fcbbbbd61f9be9464ca236387158b0feea01914a4"
+  end
+
   resource "lark-parser" do
     url "https://pypi.python.org/packages/source/l/lark-parser/lark-parser-0.5.6.tar.gz"
     sha256 "2074f2cda9303167f97da0157eefa6fdf9c0b8c7786d4a24e86c65319b34c0df"
+  end
+
+  resource "MarkupSafe" do
+    url "https://pypi.python.org/packages/source/M/MarkupSafe/MarkupSafe-1.0.tar.gz"
+    sha256 "a6be69091dac236ea9c6bc7d012beab42010fa914c459791d627dad4910eb665"
   end
 
   resource "mixpanel" do
@@ -57,12 +78,17 @@ class Asyncy < Formula
     sha256 "2a8e88259839571d1251d278476f3eec5db26deb73a70be5ed5dc5435e418aba"
   end
 
+  resource "prompt-toolkit" do
+    url "https://pypi.python.org/packages/source/p/prompt-toolkit/prompt-toolkit-2.0.3.tar.gz"
+    sha256 "d9ea14304a2633e4b40dde874c63da6b94a075f61e837011e035ffcd5bb39a1d"
+  end
+
   resource "ptyprocess" do
     url "https://pypi.python.org/packages/source/p/ptyprocess/ptyprocess-0.6.0.tar.gz"
     sha256 "923f299cc5ad920c68f2bc0bc98b75b9f838b93b599941a6b63ddbc2476394c0"
   end
 
-  resource "pygments" do
+  resource "Pygments" do
     url "https://pypi.python.org/packages/source/P/Pygments/Pygments-2.2.0.tar.gz"
     sha256 "dbae1046def0efb574852fab9e90209b23f556367b5a320c0bcb871c77c3e8cc"
   end
@@ -83,14 +109,20 @@ class Asyncy < Formula
   end
 
   resource "storyscript" do
-    url "https://pypi.python.org/packages/source/s/storyscript/storyscript-0.1.2.tar.gz"
-    sha256 "a308a0ab187bb23118b61dfc6376a9e07e62b690972fa72e0be3b489978e7ba7"
+    url "https://pypi.python.org/packages/source/s/storyscript/storyscript-0.1.6.tar.gz"
+    sha256 "5291c7d5db19cf8c474b3a4c2c9cc28b1c4471d771b32b321b88f9a4d918ae6b"
   end
 
   resource "urllib3" do
     url "https://pypi.python.org/packages/source/u/urllib3/urllib3-1.23.tar.gz"
     sha256 "a68ac5e15e76e7e5dd2b8f94007233e01effe3e50e8daddf69acfd81cb686baf"
   end
+
+  resource "wcwidth" do
+    url "https://pypi.python.org/packages/source/w/wcwidth/wcwidth-0.1.7.tar.gz"
+    sha256 "3df37372226d6e63e1b1e1eda15c594bca98a22d33a23832a90998faa96bc65e"
+  end
+
 
   def install
     virtualenv_install_with_resources
