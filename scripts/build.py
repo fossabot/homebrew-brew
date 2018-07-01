@@ -8,12 +8,6 @@ import re
 import sys
 import requests
 
-resource = '''
-  resource "{name}" do
-    url "https://pypi.python.org/packages/source/{name[0]}/{name}/{name}-{version}.tar.gz"
-    sha256 "{sha}"
-  end
-'''
 resources = []
 
 pattern = re.compile(r'data-clipboard-text="(\w{50,})"')
@@ -22,10 +16,20 @@ for dep in sys.stdin.read().split():
     assert '==' in dep, 'Must specify exact version'
     name, version = tuple(dep.split('=='))
     if name != 'asyncy':
+        url = f"https://pypi.python.org/packages/source/{name[0]}/{name}/{name}-{version}.tar.gz"
+        if requests.get(url).status_code == 404:
+            name = name.replace('-', '_')
+            url = f"https://pypi.python.org/packages/source/{name[0]}/{name}/{name}-{version}.tar.gz"
+
         res = requests.get(f'https://pypi.org/project/{name}/{version}')
         res.raise_for_status()
         sha = pattern.findall(res.text)[-1]
-        resources.append(resource.format(name=name, version=version, sha=sha))
+        resources.append(f'''
+  resource "{name}" do
+    url "{url}"
+    sha256 "{sha}"
+  end
+''')
 
 print(f'''
 class Asyncy < Formula

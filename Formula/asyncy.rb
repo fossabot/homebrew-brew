@@ -78,8 +78,8 @@ class Asyncy < Formula
     sha256 "2a8e88259839571d1251d278476f3eec5db26deb73a70be5ed5dc5435e418aba"
   end
 
-  resource "prompt-toolkit" do
-    url "https://pypi.python.org/packages/source/p/prompt-toolkit/prompt-toolkit-2.0.3.tar.gz"
+  resource "prompt_toolkit" do
+    url "https://pypi.python.org/packages/source/p/prompt_toolkit/prompt_toolkit-2.0.3.tar.gz"
     sha256 "d9ea14304a2633e4b40dde874c63da6b94a075f61e837011e035ffcd5bb39a1d"
   end
 
