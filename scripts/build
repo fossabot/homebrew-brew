@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -ex
+
+../cli/venv/bin/pip freeze \
+  | python3 scripts/build.py \
+  > Formula/asyncy.rb
