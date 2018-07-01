@@ -37,8 +37,8 @@ class Asyncy < Formula
   desc "Asyncy CLI"
   homepage "https://docs.asyncy.com/cli"
   url "https://github.com/asyncy/cli.git",
-      :tag => "0.0.7",
-      :revision => "130d0b5367162f59dde426e6b3bd423082b5c37d"
+    :tag => "0.0.8",
+    :revision => "2f0ed82fd5a56f9b129d675b8638754e74b3ce82"
   depends_on "python3"
 
 {''.join(resources)}
