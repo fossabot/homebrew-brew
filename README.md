@@ -13,8 +13,8 @@ For more information, visit https://docs.asyncy.com/cli
 ## Upgrading
 
 1. `FROM ../cli` Create new tag in GitHub for the CLI version
-1. `vim scripts/build.py` Update formula with new release version of the CLI
-1. `./scripts/build` to update dependancies
+1. `./scripts/build {tag} {sha}` to update dependancies
+  - Automating with `stories/release.story` soon.
 1. `./scripts/test` to install and test
 1. `./scripts/package` to build macOS package
   1. Upload package to GitHub tag

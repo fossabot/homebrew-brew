@@ -3,5 +3,5 @@
 set -ex
 
 ../cli/venv/bin/pip freeze \
-  | python3 scripts/build.py \
+  | python3 scripts/build.py $1 $2 \
   > Formula/asyncy.rb
