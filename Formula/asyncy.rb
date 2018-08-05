@@ -2,9 +2,8 @@ class Asyncy < Formula
   include Language::Python::Virtualenv
   desc "Asyncy CLI"
   homepage "https://docs.asyncy.com/cli"
-  url "https://github.com/asyncy/cli.git",
-      :tag => "0.0.9",
-      :revision => "4226ed2e997d522a242e97ec3aa4355c47a4a0e1"
+  url "https://pypi.python.org/packages/source/a/asyncy/asyncy-0.0.9.tar.gz"
+  sha256 "5166e87c0759609903b0894dec63db8ce9b721fc0b9eb4714eb0d9a3813ac44c"
   depends_on "python3"
 
   resource "certifi" do
