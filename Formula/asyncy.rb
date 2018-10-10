@@ -3,9 +3,14 @@ class Asyncy < Formula
   desc "Asyncy CLI"
   homepage "https://docs.asyncy.com/cli"
   url "https://github.com/asyncy/cli.git",
-    :tag => "0.0.11",
-    :revision => "ddb4aad0856dc2f92b83494068f7426592a59f1a"
+    :tag => "0.1.2",
+    :revision => "659ce98b8adccdd0edae2771712f2df006dd1d20"
   depends_on "python3"
+
+  resource "asyncio" do
+    url "https://files.pythonhosted.org/packages/da/54/054bafaf2c0fb8473d423743e191fcdf49b2c1fd5e9af3524efbe097bafd/asyncio-3.4.3.tar.gz"
+    sha256 "83360ff8bc97980e4ff25c964c7bd3923d333d177aa4f7fb736b019f26c7cb41"
+  end
 
   resource "certifi" do
     url "https://files.pythonhosted.org/packages/e1/0f/f8d5e939184547b3bdc6128551b831a62832713aa98c2ccdf8c47ecc7f17/certifi-2018.8.24.tar.gz"
@@ -25,11 +30,6 @@ class Asyncy < Formula
   resource "click-alias" do
     url "https://files.pythonhosted.org/packages/4e/7e/8e33cdcc114c4871d3489b7f4c69c5215c22d326c9681d8524193b08beac/click-alias-0.1.1a1.tar.gz"
     sha256 "8a61f583b769b0c9d1caad5639c4f2be4fb97406c81f11781937bdfbee125d17"
-  end
-
-  resource "click-didyoumean" do
-    url "https://files.pythonhosted.org/packages/9f/79/d265d783dd022541b744d002745d9e55d84c04a41930e35d8795934f6526/click-didyoumean-0.0.3.tar.gz"
-    sha256 "112229485c9704ff51362fe34b2d4f0b12fc71cc20f6d2b3afabed4b8bfa6aeb"
   end
 
   resource "click-help-colors" do
@@ -100,6 +100,11 @@ class Asyncy < Formula
   resource "wcwidth" do
     url "https://files.pythonhosted.org/packages/55/11/e4a2bb08bb450fdbd42cc709dd40de4ed2c472cf0ccb9e64af22279c5495/wcwidth-0.1.7.tar.gz"
     sha256 "3df37372226d6e63e1b1e1eda15c594bca98a22d33a23832a90998faa96bc65e"
+  end
+
+  resource "websockets" do
+    url "https://files.pythonhosted.org/packages/4e/2a/56e60bb4c3696bc736998cc13c3fa1a36210609d7e1a3f2519857b420245/websockets-6.0.tar.gz"
+    sha256 "8f3b956d11c5b301206382726210dc1d3bee1a9ccf7aadf895aaf31f71c3716c"
   end
 
   def install
