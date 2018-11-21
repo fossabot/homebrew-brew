@@ -3,8 +3,8 @@ class Asyncy < Formula
   desc "Asyncy CLI"
   homepage "https://docs.asyncy.com/cli"
   url "https://github.com/asyncy/cli.git",
-    :tag => "0.2.1",
-    :revision => "c53540a4d083782a4b136cb21e6df28c96350a16"
+    :tag => "0.2.3",
+    :revision => "69f7641bcbd089564c34a8f37c9f7c9c96ff00dd"
   depends_on "python3"
 
   resource "asyncio" do
@@ -22,9 +22,9 @@ class Asyncy < Formula
     sha256 "84ab92ed1c4d4f16916e05906b6b75a6c0fb5db821cc65e70cbd64a3e2a5eaae"
   end
 
-  resource "click" do
-    url "https://files.pythonhosted.org/packages/95/d9/c3336b6b5711c3ab9d1d3a80f1a3e2afeb9d8c02a7166462f6cc96570897/click-6.7.tar.gz"
-    sha256 "f15516df478d5a56180fbf80e68f206010e6d160fc39fa508b65e035fd75130b"
+  resource "Click" do
+    url "https://files.pythonhosted.org/packages/f8/5c/f60e9d8a1e77005f664b76ff8aeaee5bc05d0a91798afd7f53fc998dbc47/Click-7.0.tar.gz"
+    sha256 "5b94b49521f6456670fdb30cd82a4eca9412788a93fa6dd6df72c94d5a8ff2d7"
   end
 
   resource "click-alias" do
@@ -33,8 +33,8 @@ class Asyncy < Formula
   end
 
   resource "click-help-colors" do
-    url "https://files.pythonhosted.org/packages/ec/bc/6023cafc7f6b6aaef71135a6be92427d1e15e8757c08afee5373110384b7/click-help-colors-0.4.tar.gz"
-    sha256 "0cf523af04a6c7344443ef48246f7efe3d6275bcd77b6e79782a274e7c57626b"
+    url "https://files.pythonhosted.org/packages/4e/88/10c3472e038bad3a504496df1cb657a8caf505b5cf4c6b95f3cae4cd4b10/click-help-colors-0.5.tar.gz"
+    sha256 "1012611344706d0da2f8642faa61843118824a54c9950c14f5122518eb01ae6b"
   end
 
   resource "click-spinner" do
@@ -53,8 +53,8 @@ class Asyncy < Formula
   end
 
   resource "lark-parser" do
-    url "https://files.pythonhosted.org/packages/e1/b7/0ecf09c01193b8719c5353f7cfc3e8d82a179ac811a78832372f3b5b8170/lark-parser-0.6.4.tar.gz"
-    sha256 "16ff3be1fb5d215c56ec378714b126f4ec6214741aeb92b22c7ac0f8165be35e"
+    url "https://files.pythonhosted.org/packages/05/45/76b301c40337863a710239a5c3db5c55bc59eabc6c5cd839344652483273/lark-parser-0.6.5.tar.gz"
+    sha256 "b4afd2c138ce05eadc555e5d8ee370a7b26b83d7bb50f5cad2d86d88f4dc2760"
   end
 
   resource "mixpanel" do
@@ -72,14 +72,24 @@ class Asyncy < Formula
     sha256 "dbae1046def0efb574852fab9e90209b23f556367b5a320c0bcb871c77c3e8cc"
   end
 
+  resource "pytz" do
+    url "https://files.pythonhosted.org/packages/ca/a9/62f96decb1e309d6300ebe7eee9acfd7bccaeedd693794437005b9067b44/pytz-2018.5.tar.gz"
+    sha256 "ffb9ef1de172603304d9d2819af6f5ece76f2e85ec10692a524dd876e72bf277"
+  end
+
+  resource "PyYAML" do
+    url "https://files.pythonhosted.org/packages/9e/a3/1d13970c3f36777c583f136c136f804d70f500168edc1edea6daa7200769/PyYAML-3.13.tar.gz"
+    sha256 "3ef3092145e9b70e3ddd2c7ad59bdd0252a94dfe3949721633e41344de00a6bf"
+  end
+
   resource "raven" do
     url "https://files.pythonhosted.org/packages/8f/80/e8d734244fd377fd7d65275b27252642512ccabe7850105922116340a37b/raven-6.9.0.tar.gz"
     sha256 "3fd787d19ebb49919268f06f19310e8112d619ef364f7989246fc8753d469888"
   end
 
   resource "requests" do
-    url "https://files.pythonhosted.org/packages/54/1f/782a5734931ddf2e1494e4cd615a51ff98e1879cbe9eecbdfeaf09aa75e9/requests-2.19.1.tar.gz"
-    sha256 "ec22d826a36ed72a7358ff3fe56cbd4ba69dd7a6718ffd450ff0e9df7a47ce6a"
+    url "https://files.pythonhosted.org/packages/97/10/92d25b93e9c266c94b76a5548f020f3f1dd0eb40649cb1993532c0af8f4c/requests-2.20.0.tar.gz"
+    sha256 "99dcfdaaeb17caf6e526f32b6a7b780461512ab3f1d992187801694cba42770c"
   end
 
   resource "six" do
@@ -88,23 +98,23 @@ class Asyncy < Formula
   end
 
   resource "storyscript" do
-    url "https://files.pythonhosted.org/packages/51/5a/570a2f89f607066152846fdd261f861e278d8d108cadbf39eec8aa219e28/storyscript-0.6.0.tar.gz"
-    sha256 "0d7848da06c003576781a61b21d0972374c1c391ae8d8fae0f3afe2fb1ffd749"
+    url "https://files.pythonhosted.org/packages/e4/1f/c85eb410eaaa18db2d38b7b0c01a8f062df60c9a2cfc9c09a472681015b3/storyscript-0.7.1.tar.gz"
+    sha256 "baa73bcbcee54a3654a08b4bd2cdc827a338577c628564c2cf6d405715291144"
+  end
+
+  resource "texttable" do
+    url "https://files.pythonhosted.org/packages/4d/35/88cd3b6c9cfe79f98fa52a57843fc6501988b9da13dce1e6a27e1d70d357/texttable-1.4.0.tar.gz"
+    sha256 "95e8cfe85f8395a7eacdfbc8f09d885b9ef3a6ac6ead0364ea721de1127aa36b"
   end
 
   resource "urllib3" do
-    url "https://files.pythonhosted.org/packages/3c/d2/dc5471622bd200db1cd9319e02e71bc655e9ea27b8e0ce65fc69de0dac15/urllib3-1.23.tar.gz"
-    sha256 "a68ac5e15e76e7e5dd2b8f94007233e01effe3e50e8daddf69acfd81cb686baf"
+    url "https://files.pythonhosted.org/packages/b1/53/37d82ab391393565f2f831b8eedbffd57db5a718216f82f1a8b4d381a1c1/urllib3-1.24.1.tar.gz"
+    sha256 "de9529817c93f27c8ccbfead6985011db27bd0ddfcdb2d86f3f663385c6a9c22"
   end
 
   resource "wcwidth" do
     url "https://files.pythonhosted.org/packages/55/11/e4a2bb08bb450fdbd42cc709dd40de4ed2c472cf0ccb9e64af22279c5495/wcwidth-0.1.7.tar.gz"
     sha256 "3df37372226d6e63e1b1e1eda15c594bca98a22d33a23832a90998faa96bc65e"
-  end
-
-  resource "websockets" do
-    url "https://files.pythonhosted.org/packages/4e/2a/56e60bb4c3696bc736998cc13c3fa1a36210609d7e1a3f2519857b420245/websockets-6.0.tar.gz"
-    sha256 "8f3b956d11c5b301206382726210dc1d3bee1a9ccf7aadf895aaf31f71c3716c"
   end
 
   def install
