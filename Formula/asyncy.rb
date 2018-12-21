@@ -3,8 +3,8 @@ class Asyncy < Formula
   desc "Asyncy CLI"
   homepage "https://docs.asyncy.com/cli"
   url "https://github.com/asyncy/cli.git",
-    :tag => "0.3.0",
-    :revision => "b8bd625c328883bfc66b518ee55f7234da3547a3"
+    :tag => "0.3.1",
+    :revision => "4b55c40a0c6497df5c6c84b50f415561d8586d03"
   depends_on "python3"
 
   resource "asyncio" do
@@ -42,6 +42,11 @@ class Asyncy < Formula
     sha256 "67b5af5e825faf82a4fc6cda77c58359abe716fb1c9bc12cc7bea9a0cae1fc8e"
   end
 
+  resource "delegator.py" do
+    url "https://files.pythonhosted.org/packages/08/29/199c7e8efd277eb00d842cb735c65f1d3d1c070e4903b0e44b30ca8e2604/delegator.py-0.1.1.tar.gz"
+    sha256 "e6cc9cedab9ae59b169ee0422e17231adedadb144e63c0b5a60e6ff8adf8521b"
+  end
+
   resource "emoji" do
     url "https://files.pythonhosted.org/packages/47/e7/cf76e0774b13459e61ffe16a042a35f42e292aeebba060b919c05b0854ab/emoji-0.5.0.tar.gz"
     sha256 "001b92b9c8a157e1ca49187745fa450513bc8b31c87328dfd83d674b9d7dfa63"
@@ -57,14 +62,19 @@ class Asyncy < Formula
     sha256 "b4afd2c138ce05eadc555e5d8ee370a7b26b83d7bb50f5cad2d86d88f4dc2760"
   end
 
-  resource "mixpanel" do
-    url "https://files.pythonhosted.org/packages/bf/03/4413160bbe55ee64f0676cba2b787408b3c78d14ba4db52ba8334e39dfaf/mixpanel-4.3.2.tar.gz"
-    sha256 "86e3fc54a496d009f6dee4f05598acd0afc6e81ccee8901fc3ca6c5194c29e44"
+  resource "pexpect" do
+    url "https://files.pythonhosted.org/packages/89/43/07d07654ee3e25235d8cea4164cdee0ec39d1fda8e9203156ebe403ffda4/pexpect-4.6.0.tar.gz"
+    sha256 "2a8e88259839571d1251d278476f3eec5db26deb73a70be5ed5dc5435e418aba"
   end
 
   resource "prompt-toolkit" do
     url "https://files.pythonhosted.org/packages/3e/36/d24222c4a44cb7b8d902db407e1918d8553c765b1384d78c7ea7a85b144c/prompt_toolkit-2.0.3.tar.gz"
     sha256 "d9ea14304a2633e4b40dde874c63da6b94a075f61e837011e035ffcd5bb39a1d"
+  end
+
+  resource "ptyprocess" do
+    url "https://files.pythonhosted.org/packages/7d/2d/e4b8733cf79b7309d84c9081a4ab558c89d8c89da5961bf4ddb050ca1ce0/ptyprocess-0.6.0.tar.gz"
+    sha256 "923f299cc5ad920c68f2bc0bc98b75b9f838b93b599941a6b63ddbc2476394c0"
   end
 
   resource "Pygments" do
@@ -98,8 +108,8 @@ class Asyncy < Formula
   end
 
   resource "storyscript" do
-    url "https://files.pythonhosted.org/packages/e4/1f/c85eb410eaaa18db2d38b7b0c01a8f062df60c9a2cfc9c09a472681015b3/storyscript-0.7.1.tar.gz"
-    sha256 "baa73bcbcee54a3654a08b4bd2cdc827a338577c628564c2cf6d405715291144"
+    url "https://files.pythonhosted.org/packages/cb/15/c359e0871c29a1d724d4c89aa5d7537584564c3844f660f4c823d6b91f7a/storyscript-0.8.3.tar.gz"
+    sha256 "a4fceb4a21865465bbf47afaa3e6236240045bcc9b5cbe86fbab0f10d526e842"
   end
 
   resource "texttable" do
