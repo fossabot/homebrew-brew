@@ -3,8 +3,8 @@ class Asyncy < Formula
   desc "Asyncy CLI"
   homepage "https://docs.asyncy.com/cli"
   url "https://github.com/asyncy/cli.git",
-    :tag => "0.3.1",
-    :revision => "4b55c40a0c6497df5c6c84b50f415561d8586d03"
+    :tag => "0.3.2",
+    :revision => "f3f3ff5066853b527ab3334a34957cedc552b954"
   depends_on "python3"
 
   resource "asyncio" do
@@ -28,8 +28,8 @@ class Asyncy < Formula
   end
 
   resource "click-alias" do
-    url "https://files.pythonhosted.org/packages/4e/7e/8e33cdcc114c4871d3489b7f4c69c5215c22d326c9681d8524193b08beac/click-alias-0.1.1a1.tar.gz"
-    sha256 "8a61f583b769b0c9d1caad5639c4f2be4fb97406c81f11781937bdfbee125d17"
+    url "https://files.pythonhosted.org/packages/e9/91/70b7a41469b859a91ea46e01f13cc0ea2b26da59f4c7859847cdc36b7eb6/click-alias-0.1.1a2.tar.gz"
+    sha256 "b14cadd451cdf8c325cc795477a5adbdd1d11266c9ecbccfa9063e1bca7bed55"
   end
 
   resource "click-help-colors" do
@@ -108,8 +108,8 @@ class Asyncy < Formula
   end
 
   resource "storyscript" do
-    url "https://files.pythonhosted.org/packages/cb/15/c359e0871c29a1d724d4c89aa5d7537584564c3844f660f4c823d6b91f7a/storyscript-0.8.3.tar.gz"
-    sha256 "a4fceb4a21865465bbf47afaa3e6236240045bcc9b5cbe86fbab0f10d526e842"
+    url "https://files.pythonhosted.org/packages/8f/64/7bcc785249175f894125ed37b4a628a9f5354a00daa4a6be6f8b31fe8450/storyscript-0.9.0.tar.gz"
+    sha256 "063c9697008079823ee3d77844f0daed807702cbe4938731fa4965d1c8a7c97c"
   end
 
   resource "texttable" do
