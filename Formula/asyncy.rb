@@ -3,8 +3,8 @@ class Asyncy < Formula
   desc "Asyncy CLI"
   homepage "https://docs.asyncy.com/cli"
   url "https://github.com/asyncy/cli.git",
-    :tag => "0.3.2",
-    :revision => "f3f3ff5066853b527ab3334a34957cedc552b954"
+    :tag => "0.3.4",
+    :revision => "5d0f7794a531a78bc82bf625f5874d15e4502ec4"
   depends_on "python3"
 
   resource "asyncio" do
@@ -58,8 +58,8 @@ class Asyncy < Formula
   end
 
   resource "lark-parser" do
-    url "https://files.pythonhosted.org/packages/05/45/76b301c40337863a710239a5c3db5c55bc59eabc6c5cd839344652483273/lark-parser-0.6.5.tar.gz"
-    sha256 "b4afd2c138ce05eadc555e5d8ee370a7b26b83d7bb50f5cad2d86d88f4dc2760"
+    url "https://files.pythonhosted.org/packages/7c/1a/36d20242838a523252d053f718b8d6e98c72c07afc45a581d493f8a9dd69/lark-parser-0.6.6.tar.gz"
+    sha256 "43d623edae6f16db038d29f8586406002f2bea63c0363dc9acbedac27de7040e"
   end
 
   resource "pexpect" do
