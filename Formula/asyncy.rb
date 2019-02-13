@@ -3,8 +3,8 @@ class Asyncy < Formula
   desc "Asyncy CLI"
   homepage "https://docs.asyncy.com/cli"
   url "https://github.com/asyncy/cli.git",
-    :tag => "0.3.8",
-    :revision => "6ff6b363bd22dd8a3a1a800a64a4803ad6273855"
+    :tag => "0.4.0",
+    :revision => "57268d6e6e9534f723cfb4437e6b8925fd012e9c"
   depends_on "python3"
 
   resource "asyncio" do
@@ -57,16 +57,6 @@ class Asyncy < Formula
     sha256 "b4afd2c138ce05eadc555e5d8ee370a7b26b83d7bb50f5cad2d86d88f4dc2760"
   end
 
-  resource "prompt-toolkit" do
-    url "https://files.pythonhosted.org/packages/3e/36/d24222c4a44cb7b8d902db407e1918d8553c765b1384d78c7ea7a85b144c/prompt_toolkit-2.0.3.tar.gz"
-    sha256 "d9ea14304a2633e4b40dde874c63da6b94a075f61e837011e035ffcd5bb39a1d"
-  end
-
-  resource "Pygments" do
-    url "https://files.pythonhosted.org/packages/71/2a/2e4e77803a8bd6408a2903340ac498cb0a2181811af7c9ec92cb70b0308a/Pygments-2.2.0.tar.gz"
-    sha256 "dbae1046def0efb574852fab9e90209b23f556367b5a320c0bcb871c77c3e8cc"
-  end
-
   resource "pytz" do
     url "https://files.pythonhosted.org/packages/ca/a9/62f96decb1e309d6300ebe7eee9acfd7bccaeedd693794437005b9067b44/pytz-2018.5.tar.gz"
     sha256 "ffb9ef1de172603304d9d2819af6f5ece76f2e85ec10692a524dd876e72bf277"
@@ -87,14 +77,9 @@ class Asyncy < Formula
     sha256 "99dcfdaaeb17caf6e526f32b6a7b780461512ab3f1d992187801694cba42770c"
   end
 
-  resource "six" do
-    url "https://files.pythonhosted.org/packages/dd/bf/4138e7bfb757de47d1f4b6994648ec67a51efe58fa907c1e11e350cddfca/six-1.12.0.tar.gz"
-    sha256 "d16a0141ec1a18405cd4ce8b4613101da75da0e9a7aec5bdd4fa804d0e0eba73"
-  end
-
   resource "storyscript" do
-    url "https://files.pythonhosted.org/packages/54/3c/cf8fa22f7a858c8d2da44b12203541774520583ecb902af3637a82d952b6/storyscript-0.9.2.tar.gz"
-    sha256 "dd391ba33e36b87cd15f8ef9a808c9b5a6dad22a5fb5e345ceb6a9119e2e37bd"
+    url "https://files.pythonhosted.org/packages/20/c4/15e1b0bb4b7116a6d247a3b769ef7f2e9fa2cee0d690c0d32ba2ba5ff0ab/storyscript-0.9.5.tar.gz"
+    sha256 "bd0dd7d9b13705cd6a289d940a2f62a741c8b56adceb40c157dad9d81562b063"
   end
 
   resource "texttable" do
@@ -105,11 +90,6 @@ class Asyncy < Formula
   resource "urllib3" do
     url "https://files.pythonhosted.org/packages/b1/53/37d82ab391393565f2f831b8eedbffd57db5a718216f82f1a8b4d381a1c1/urllib3-1.24.1.tar.gz"
     sha256 "de9529817c93f27c8ccbfead6985011db27bd0ddfcdb2d86f3f663385c6a9c22"
-  end
-
-  resource "wcwidth" do
-    url "https://files.pythonhosted.org/packages/55/11/e4a2bb08bb450fdbd42cc709dd40de4ed2c472cf0ccb9e64af22279c5495/wcwidth-0.1.7.tar.gz"
-    sha256 "3df37372226d6e63e1b1e1eda15c594bca98a22d33a23832a90998faa96bc65e"
   end
 
   def install
