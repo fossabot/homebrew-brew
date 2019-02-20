@@ -3,8 +3,8 @@ class Asyncy < Formula
   desc "Asyncy CLI"
   homepage "https://docs.asyncy.com/cli"
   url "https://github.com/asyncy/cli.git",
-    :tag => "0.4.3",
-    :revision => "d2a408383a6f02f31219fb0b80359580ce4cbea9"
+    :tag => "0.4.4",
+    :revision => "07545e710edf67885cd7f8fbc945d3af7f4e44cf"
   depends_on "python3"
 
   resource "asyncio" do
@@ -78,8 +78,8 @@ class Asyncy < Formula
   end
 
   resource "storyscript" do
-    url "https://files.pythonhosted.org/packages/9e/1e/649a234c015be771c452c34fff85d7b546ead868c78f05ad8edd52070dd4/storyscript-0.9.6.tar.gz"
-    sha256 "86dad87b173aa705bd6e8500f67cdb88d16a451e573e49db04b448c8560f08c6"
+    url "https://files.pythonhosted.org/packages/27/23/37ac4084e378452c8f0d48b932d007d2b3de3872469d9026a3d42950be8e/storyscript-0.9.7.tar.gz"
+    sha256 "3ba8e516b83a9a465153c87438888dd8c31e6a36346370c403bab013b96df38a"
   end
 
   resource "texttable" do
