@@ -3,8 +3,8 @@ class Asyncy < Formula
   desc "Asyncy CLI"
   homepage "https://docs.asyncy.com/cli"
   url "https://github.com/asyncy/cli.git",
-    :tag => "0.4.5",
-    :revision => "9225a64b5a3442fc7a0fecf31fc2e301d29aa0c0"
+    :tag => "0.5.0",
+    :revision => "e9602f269201305d3217b4526e2d2e98f0e54b48"
   depends_on "python3"
 
   resource "asyncio" do
