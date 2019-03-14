@@ -3,8 +3,8 @@ class Asyncy < Formula
   desc "Asyncy CLI"
   homepage "https://docs.asyncy.com/cli"
   url "https://github.com/asyncy/cli.git",
-    :tag => "0.5.1",
-    :revision => "6c2b2d792b28a68379ca247409ab0c6d78559b2e"
+    :tag => "0.5.2",
+    :revision => "3ec61a7040a017bef860b5ba6f8e296195bbff31"
   depends_on "python3"
 
   resource "asyncio" do
@@ -13,8 +13,8 @@ class Asyncy < Formula
   end
 
   resource "certifi" do
-    url "https://files.pythonhosted.org/packages/55/54/3ce77783acba5979ce16674fc98b1920d00b01d337cfaaf5db22543505ed/certifi-2018.11.29.tar.gz"
-    sha256 "47f9c83ef4c0c621eaef743f133f09fa8a74a9b75f037e8624f83bd1b6626cb7"
+    url "https://files.pythonhosted.org/packages/06/b8/d1ea38513c22e8c906275d135818fee16ad8495985956a9b7e2bb21942a1/certifi-2019.3.9.tar.gz"
+    sha256 "b26104d6835d1f5e49452a26eb2ff87fe7090b89dfcaee5ea2212697e1e1d7ae"
   end
 
   resource "chardet" do
